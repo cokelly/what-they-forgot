@@ -1,5 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
-.Ruserdata
-README.html
+_book
+_bookdown_files
+rsconnect
+docs
+what-they-forgot.rds
+.netlify
+node_modules
+package-lock.json

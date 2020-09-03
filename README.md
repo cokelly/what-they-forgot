@@ -1,89 +1,40 @@
 # What They Forgot to Teach You About R
 
-Shortlinks and downloads:
+Rendered site: [rstats.wtf](https://rstats.wtf)
 
-  * [rstd.io/forgot](https://rstd.io/forgot) points here
-  * [rstd.io/forgot_gitter](https://rstd.io/forgot_gitter) is our chat room (ignore if you are overstimulated already)
-  * The [issues](https://github.com/jennybc/what-they-forgot/issues) here are a great place to record gotchas we encountered, good sidebar discussions, etc. that should be considered in future workshops.
+Netlify preview URL: <https://rstats-wtf.netlify.com>
+
+<a alt = "TravisCI Build Status" href="https://travis-ci.org/rstats-wtf/what-they-forgot"><img src="https://travis-ci.org/rstats-wtf/what-they-forgot.svg?branch=master" height = 20 /></a>
+<a alt = "Netlify Deployments" href="https://app.netlify.com/sites/rstats-wtf/deploys"><img src="https://api.netlify.com/api/v1/badges/ad37c579-9932-4076-ae3b-7e2802c26ab2/deploy-status" height = 20 /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" height = 20 /></a>
+<a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed." height = 20 /></a>
+
+The initial impetus for creating these materials is a two-day hands-on workshop. The target learner:
+
+  * Has a moderate amount of R and RStudio experience.
+  * Is largely self-taught.
+  * Suspects they have drifted into some idiosyncratic habits that may slow
+    them down or make their work products more brittle.
+  * Is interested in (re)designing their R lifestyle, to be more effective and
+    more self-sufficient.
+
+The in-person workshops are still the primary delivery method for this content, but we've begun recording prose versions of this content, in order to make it more widely available and for participants to refer back to. Warning: these materials absolutely do not constitute a self-contained "book", nor do they capture all workshop content. 
+
+We focus on building holistic and project-oriented workflows that address the most common sources of friction in data analysis, *outside of doing the statistical analysis itself*.
+
+## Workshops
+
+Upcoming and past offerings:
+
+  * [rstudio::conf 2020](https://rstudio.com/conference/), San Francisco, CA,
+    January 27 & 28 Training Days
+  * rstudio::conf January 2019, Austin, TX
+  * 2018 October 4 & 5, Seattle, WA
+  * rstudio::conf January 2018, San Diego, CA
   
-Day 1, morning
+The workshops typically include substantial components that draw on other materials, such as:
 
-  * [Download PDF of of slides](https://github.com/jennybc/what-they-forgot/raw/master/slides/day1_slides1_projects-and-paths.pdf) re: projects, file system operations, file names
-  * `usethis::use_course("rstd.io/forgot_1")` downloads first challenge re: exploring your package libraries
-    - If you have trouble connecting to DropBox, the same files are here in the directory [`day1_s1_explore-libraries`](day1_s1_explore-libraries)
-  *  `usethis::use_course("rstd.io/forgot_2")` downloads second challenge re: working with the filesystem programmatically
-    - If you have trouble connecting to DropBox, the same files are here in the directory [`day1_s2_copy-files`](day1_s2_copy-files)
-
-Day 1, afternoon
-
-  * [Download PDF of slides](https://github.com/jennybc/what-they-forgot/raw/master/slides/day1_slides2_git-and-github.pdf) re: Git + GitHub + R/Rmd
-  * [Happy Git with R](http://happygitwithr.com)
-    - Participants and helpers should use this as primary resource for Git/GitHub setup and troubleshooting
-    - This is also the permanent home of many of the activities we worked through, Git/GitHub topics covered, etc.
-    - [Issues](https://github.com/jennybc/happy-git-with-r/issues) are welcome here as well re: sections that should be added.
-    
-Day 2, morning
-
-  * [Download PDF of slides](https://github.com/jennybc/what-they-forgot/raw/master/slides/day2_slides1_github-search.pdf) re: how to exploit the active R scene on GitHub by Jim Hester
-  * General Q & A re: GitHub habits and etiquette.
-  * Discuss [issue about updating / reinstalling packages](https://github.com/jennybc/what-they-forgot/issues/4) after updating R. General Q & A re: maintaining one's R installation. Startup files.
-    - [GitHub search](https://github.com/search?utf8=✓&q=dotfiles&type=) for dotfile repos!
-    - Kevin Ushey blog post on `.Rprofile` [RProfile Essentials](http://kevinushey.github.io/blog/2015/02/02/rprofile-essentials/)
-    - Kevin's [etc repo](https://github.com/kevinushey/etc) for dotfiles and the like
-    - Shaun Jackman's [dotfiles repo](https://github.com/sjackman/dotfiles)
-    - Jim Hester's [dotfiles repo](https://github.com/jimhester/dotfiles)
-  * [Download PDF of slides](https://github.com/jennybc/what-they-forgot/raw/master/slides/day2_slides2_project-api.pdf) re: project subdirectories & choreography, a humane API for an analysis, and the here package
-    - Link to GitHub repo you will fork, clone, and develop during the challenge: [rstd.io/forgot_3](https://rstd.io/forgot_3)
-    - One possible solution (don't peek!) [rstd.io/forgot_4](https://rstd.io/forgot_4)
-    
-Day 2, afternoon
-
-  * Finish morning challenge and debrief
-  * [Kirill Müller](https://github.com/krlmlr/) to share a [preview of Make-like packages for R work](https://krlmlr.github.io/drake-pitch/#1)
-  * Discuss file and directory naming (was skipped on Day 1 due to time)
-  * [Download PDF of slides](https://github.com/jennybc/what-they-forgot/raw/master/slides/day2_slides4_purrr.pdf) on iterating with purrr
-  * Much bigger set of purrr explainers and tutorials: <https://jennybc.github.io/purrr-tutorial/index.html>
-  * Live code demo of purrr
-    - [rstd.io/jenny-live-code](https://rstd.io/jenny-live-code)
-    - Version at the start (has gaps for challenges) [purrr-live-coding.R](purrr-live-coding.R)
-    - Version at the end (everything filled in) *Jenny to copy her final version here after the live code segment is done*
-  * Prompts for Choose Your Own Adventure: [prompts.md](prompts.md)
-  * During Choose Your own Adventure, also assume it's "office hours" w/ Jenny, Kirill, Lucy, Jim. Show us your weird R stuff!
-  * Examples that draw on many workshop themes
-    - Clickable gallery of [O'Reilly book cover parodies](https://github.com/jennybc/orly-full-res#readme), forked from [thepracticaldev/orly-full-res](https://github.com/thepracticaldev/orly-full-res)
-    - [Fattest cat](https://github.com/jennybc/fattest-cat), finds the fattest cat currently up for adoption as SF SPCA. Translated from the [original Javascript](https://github.com/lexiross/fattest-cat).
-  * Wrap up *not sure if I'll post slides, most will be repeats*
-
-[![Gitter chat](https://badges.gitter.im/what-they-forgot/Lobby.svg)](https://gitter.im/what-they-forgot/Lobby) <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
-
-## Installing the fs package on macOS
-
-fs is a new package from Jim Hester that for managing files and
-directories that I will use throughout the workshop.
-
-The CRAN mirrors are currently having trouble with macOS binaries. If
-you are on mac you can install the fs package with a binary for the current
-CRAN release (1.1.0):
-
-```
-url <- "https://github.com/jennybc/what-they-forgot/blob/master/fs_1.1.0.tgz?raw=true"
-install.packages(url, repos = NULL, type = "binary")
-```
-
-There is also a binary available for the current development version of fs.
-```
-install.packages("https://github.com/r-lib/fs/releases/download/1.1.0.9000/fs_1.1.0.9000.tgz")
-```
-
-## Fixing slow CRAN downloads
-
-We have set up a local CRAN mirror for the RStudio conference. All
-requests to `https://cran.rstudio.com/` are intercepted and redirected
-to this local mirror in order to improve download speeds. Make sure
-your default CRAN repo is set to the RStudio mirror (this is the
-default if you use RStudio):
-
-```
-options(repos = c(CRAN = "https://cran.rstudio.com/"))
-```
+  * [Happy Git and GitHub for the useR](https://happygitwithr.com)
+  * Iterating well with the purrr package
+    - [purrr tutorial](https://jennybc.github.io/purrr-tutorial/)
+    - [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme)

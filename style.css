@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Proza+Libre:500,500i|Source+Code+Pro&display=swap');
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.rmdcaution, .rmdimportant, .rmdnote, .rmdinfo, .rmdwarning {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: #f5f5f5 5px center/3em no-repeat;
+}
+/*.rmdcaution {*/
+  /*background-image: url("../images/caution.png");*/
+/*}*/
+/*.rmdimportant {*/
+  /*background-image: url("../images/important.png");*/
+/*}*/
+/*.rmdnote {*/
+  /*background-image: url("../images/note.png");*/
+/*}*/
+
+.rmdinfo {
+  background-image: url("images/info.png");
+}
+
+.rmdwarning {
+  background-image: url("images/warning.png");
+}
+
+/* These two rules make the horizontal line go straight across in top navbar */
+
+.summary > li:first-child {
+	height: 50px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.book .book-summary ul.summary li.divider {
+	height: 0px;
+}
+
+/* Hide first level-one markdown header from only the chapter named
+what-they-forgot-to-teach-you-about-r */
+
+#what-they-forgot-to-teach-you-about-r > h1:nth-child(1){
+  visibility: hidden;
+}
+
+/*------------- Body and header text---------------- */
+
+.book.font-family-1 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.title, h1, h2, h3, h4 {
+  font-family: 'Proza Libre', sans-serif;
+  color: #284a29;
+}
+
+.author {
+  color: #284a29 !important;
+}
+
+p.author em {
+  font-style: normal !important;
+}
+
+/*------------ TOC --------------*/
+
+.summary {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  color: #284a29;
+}
+
+.summary a:hover {
+  color: #629d62 !important;
+}
+
+.book .book-summary ul.summary li.active>a { /*active TOC links*/
+  color: #629d62 !important;
+}
+
+/*-----Body Links-------*/
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #629d62;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+ color: #284a29; /* darker color when hovering */
+}
+
+/*------------- CODE --------------*/
+
+.book .book-body .page-wrapper .page-inner section.normal code,
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  font-family: 'Source Code Pro', monospace;
+}

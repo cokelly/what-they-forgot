@@ -1,0 +1,7 @@
+# Session info {-}
+
+```{r}
+git2r::repository()
+
+sessioninfo::session_info()
+```
